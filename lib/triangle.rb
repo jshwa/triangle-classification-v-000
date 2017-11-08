@@ -9,15 +9,15 @@ class Triangle
 
   def kind
     if @a + @b > 0 && @a + @c > 0 && @c + @b > 0
-      case @a, @b, @c
+      case
         when @a == @b == @c
           :equilateral
         when @a == @b || @b == @c || @a == @c
           :isosceles
         else
           :scalene
-        end 
-    else 
+        end
+    else
       raise TriangleError
     end
   end
@@ -26,5 +26,3 @@ end
 class TriangleError < StandardError
 
 end
-
-  
