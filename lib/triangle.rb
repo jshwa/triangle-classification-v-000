@@ -8,7 +8,7 @@ class Triangle
   end
 
   def kind
-    if @a + @b > 0 && @a + @c > 0 && @c + @b > 0
+    if @a + @b > @c && @a + @c > @b && @c + @b > @a
       case
       when @a == @b && @b == @c
           :equilateral
